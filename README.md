@@ -17,3 +17,9 @@
 > * **Fraction.java:** Maneja fracciones matemáticas.
 > * **Point.java:** Maneja coordenadas de dos dimensiones, ofreciendo diversas funcionalidades.
 > * **User.java:** Almacena un identificador, el nombre y apellido, controlando el formato del mismo y mostrando diferentes representaciones.
+
+### Estado del código
+
+> [![Build Status](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber.svg?branch=master)](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber)
+
+> [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=es.upm.miw:MiguelArber)](https://sonarcloud.io/dashboard/index/es.upm.miw:MiguelArber)
