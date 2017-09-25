@@ -44,4 +44,14 @@ public class FractionTest {
 	public void testIsSmallerDouble() {
 		assert (f.isSmaller(0.85));
 	}
+	
+	@Test
+    public void testIsGreaterFraction() {
+        assert (f1.isSmaller(f));
+    }
+
+    @Test
+    public void testIsGreaterDouble() {
+        assert (f1.isSmaller(0.85));
+    }
 }

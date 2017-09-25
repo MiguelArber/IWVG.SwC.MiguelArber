@@ -67,4 +67,12 @@ public class Fraction {
 	public boolean isSmaller(double d) {
 		return this.decimal() < d;
 	}
+	
+	public boolean isGreater(Fraction b) {
+        return this.decimal() > b.decimal();
+    }
+
+    public boolean isGreater(double d) {
+        return this.decimal() > d;
+    }
 }
