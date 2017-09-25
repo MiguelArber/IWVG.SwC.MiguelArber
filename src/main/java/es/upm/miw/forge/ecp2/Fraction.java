@@ -64,4 +64,7 @@ public class Fraction {
 		return this.decimal() < b.decimal();
 	}
 
+	public boolean isSmaller(double d) {
+		return this.decimal() < d;
+	}
 }
