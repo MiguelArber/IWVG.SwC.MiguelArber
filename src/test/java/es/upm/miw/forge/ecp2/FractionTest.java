@@ -36,7 +36,12 @@ public class FractionTest {
 	}
 
 	@Test
-	public void testIsSmaller() {
+	public void testIsSmallerFraction() {
 		assert (f.isSmaller(f1));
+	}
+
+	@Test
+	public void testIsSmallerDouble() {
+		assert (f.isSmaller(0.85));
 	}
 }
