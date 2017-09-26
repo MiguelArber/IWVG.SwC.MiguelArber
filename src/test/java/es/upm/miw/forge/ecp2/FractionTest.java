@@ -47,11 +47,11 @@ public class FractionTest {
 	
 	@Test
     public void testIsGreaterFraction() {
-        assert (f1.isSmaller(f));
+        assert (f1.isGreater(f));
     }
 
     @Test
     public void testIsGreaterDouble() {
-        assert (f1.isSmaller(0.85));
+        assert (f1.isGreater(0.85));
     }
 }
