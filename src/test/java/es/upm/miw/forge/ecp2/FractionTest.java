@@ -9,12 +9,13 @@ import es.upm.miw.forge.ecp2.Fraction;
 
 public class FractionTest {
 
-	private Fraction f, f1;
+	private Fraction f, f1, f2;
 
 	@Before
 	public void before() {
 		f = new Fraction(1, 2);
 		f1 = new Fraction();
+		f2= new Fraction(2, 2);
 	}
 
 	@Test
@@ -53,5 +54,15 @@ public class FractionTest {
     @Test
     public void testIsGreaterDouble() {
         assert (f1.isGreater(0.85));
+    }
+    
+    @Test
+    public void testIsEqualFraction() {
+        assert (f1.isEqual(f2));
+    }
+
+    @Test
+    public void testIsEqualDouble() {
+        assert (f.isEqual(0.5));
     }
 }
