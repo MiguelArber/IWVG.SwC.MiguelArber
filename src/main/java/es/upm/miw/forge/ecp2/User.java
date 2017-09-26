@@ -6,16 +6,19 @@ public class User {
     private String name;
 
     private String familyName;
+    
+    private String address;
 
     private String format(String string) {
         string = string.trim();
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName) {
+    public User(int number, String name, String familyName, String address) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
+        this.address = this.format(address);
     }
 
     public int getNumber() {
@@ -30,6 +33,10 @@ public class User {
         return this.familyName;
     }
 
+    public String getAddress() {
+        return this.address;
+    }
+    
     public String fullName() {
         return this.name + " " + this.familyName;
     }
