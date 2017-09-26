@@ -14,7 +14,7 @@ public class UserTest {
 	
 	 @Before
 	    public void before() {
-	        u = new User(1, "Miguel", "Arber");
+	        u = new User(1, "Miguel", "Arber", "MyAddress");
 	    }
 	 
 	    @Test
