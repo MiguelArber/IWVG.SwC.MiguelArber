@@ -9,12 +9,20 @@ import es.upm.miw.forge.ecp2.Point;
 
 public class PointTest {
     private Point pt;
+    int xyz = 4;
 
     @Before
     public void before() {
         pt = new Point(2, 3, 1);
     }
 
+    @Test
+    public void testPoint() {
+        pt = new Point(xyz, xyz, xyz);
+        assertEquals(xyz, pt.getX());
+        assertEquals(xyz, pt.getY());
+        assertEquals(xyz, pt.getZ());
+    }
     @Test
     public void testPuntoIntInt() {
         assertEquals(2, pt.getX());
