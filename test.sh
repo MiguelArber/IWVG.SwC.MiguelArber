@@ -1,4 +1,4 @@
-export workspace=/Users/Arber/Develop/Eclipse Oxygen/Workspace/IWVG-forge/scripts
+export workspace=/home/miguelarber/eclipse-workspace/IWVG.SwC.MiguelArber
 echo -----------------------------------------
 echo "MiguelArber.Magjistari.SVC.miw.upm.es"
 echo -----------------------------------------
