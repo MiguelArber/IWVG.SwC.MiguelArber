@@ -20,6 +20,6 @@
 
 ### Estado del código
 
-> [![Build Status](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber.svg?branch=develop)](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber)
+> [![Build Status](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber.svg?branch=master)](https://travis-ci.org/MiguelArber/IWVG.SwC.MiguelArber)
 
 > [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=es.upm.miw:MiguelArber)](https://sonarcloud.io/dashboard/index/es.upm.miw:MiguelArber)
