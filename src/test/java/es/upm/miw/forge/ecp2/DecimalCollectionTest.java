@@ -55,4 +55,14 @@ public class DecimalCollectionTest {
 		new DecimalCollection().higher();
 	}
 
+	@Test
+	public void testLower() {
+		assertEquals(-1.0, this.decimalCollection.lower(), 10e-5);
+	}
+
+	@Test
+	public void testLowerArithmeticExceptionIfEmpty() {
+		exception.expect(ArithmeticException.class);
+		new DecimalCollection().lower();
+	}
 }

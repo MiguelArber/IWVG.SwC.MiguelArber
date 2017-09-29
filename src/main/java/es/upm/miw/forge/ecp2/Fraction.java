@@ -35,29 +35,52 @@ package es.upm.miw.forge.ecp2;
  * 
  */
 public class Fraction {
-    private int numerator;
+	private int numerator;
 
-    private int denominator;
+	private int denominator;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
+
+	public Fraction() {
+		this(1, 1);
+	}
+
+	public int getNumerator() {
+		return numerator;
+	}
+
+	public int getDenominator() {
+		return denominator;
+	}
+
+	public double decimal() {
+		return (double) numerator / denominator;
+	}
+
+	public boolean isSmaller(Fraction b) {
+		return this.decimal() < b.decimal();
+	}
+
+	public boolean isSmaller(double d) {
+		return this.decimal() < d;
+	}
+	
+	public boolean isGreater(Fraction b) {
+        return this.decimal() > b.decimal();
     }
 
-    public Fraction() {
-        this(1, 1);
-    }
-
-    public int getNumerator() {
-        return numerator;
-    }
-
-    public int getDenominator() {
-        return denominator;
-    }
-
-    public double decimal() {
-        return (double) numerator / denominator;
+    public boolean isGreater(double d) {
+        return this.decimal() > d;
     }
     
+    public boolean isEqual(Fraction b) {
+    	return this.decimal() == b.decimal();
+    }
+    
+    public boolean isEqual(double d) {
+    	return this.decimal() == d;
+    }
 }

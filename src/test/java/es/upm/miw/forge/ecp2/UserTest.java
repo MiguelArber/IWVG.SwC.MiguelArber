@@ -14,7 +14,7 @@ public class UserTest {
 	
 	 @Before
 	    public void before() {
-	        u = new User(1, "Miguel", "Arber");
+	        u = new User(1, "Miguel", "Arber", "Myaddress");
 	    }
 	 
 	    @Test
@@ -40,5 +40,10 @@ public class UserTest {
 	    @Test
 	    public void testUserInitials() {
 	        assertEquals("M.", u.initials());
+	    }
+	    
+	    @Test
+	    public void testGetAddress() {
+	        assertEquals("Myaddress", u.getAddress());
 	    }
 }
